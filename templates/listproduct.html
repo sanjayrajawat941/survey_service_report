@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+
+
+    <table class="table">
+
+      <tr>
+          <th>product id</th>
+        <th>prduct name</th>
+        <th>Product info</th>
+        <th>compsny name</th>
+          <th>Review</th>
+
+      </tr>
+
+    {% for row in data1 %}
+        <tr>
+       <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+        <td>{{ row[2] }}</td>
+        <td>{{ row[3] }}</td>
+        <td><a href="/review">Review</a> </td>
+
+
+
+
+
+        </tr>
+    {% endfor %}
+
+</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Title</title>
+      <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<div class="navbar navbar-default navbar-fixed-top">
+
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <h1 class="glyphicon glyphicon-lamp"> DASHBOARD</h1>
+            <h2 style="margin-left: 1400px">welcome! {{ data1[1]}}</h2>
+
+        </div>
+    </div>
+</div>
+<form method="post" action="/pro">
+<div class="col-lg-4" style="background-color:#fae2ee;margin-left: 600px;margin-top: 300px;height: 400px">
+    <legend>ADD PRODUCT</legend>
+    <div class="form-group">
+<label>product name</label>
+        <input type="text" class="form-control"name="t1">
+    </div>
+    <div class="form-group">
+        <label>product information</label>
+        <input type="text" class="form-control" name="t2">
+    </div>
+    <button type="submit"> ADD PRODUCT</button>
+
+</div>
+
+</form>
+
+
+<div class="jumbotron" style="height: 200px;background-color: #122b40;margin-top: 200px"> <button><a href="/aa"> show products</a></button></div>
+<div class="jumbotron" style="height: 200px;background-color: #122b40;margin-top: 200px"> <button><a href="/test"> graph</a></button></div>
+</div>
+
+
+
+</body>
+</html>

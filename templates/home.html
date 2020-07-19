@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>micro solution pvt lt </title>
+
+      <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top"style="background-color: snow">
+  <div class="container-fluid">
+    <div class="navbar-header">
+<h1 class="navbar-brand glyphicon glyphicon-credit-card"></h1>
+      <h2 class="navbar-brand " style="font: bolder ;color: black;font-size: xx-large">MicroSolution</h2>
+
+    </div>
+    <ul class="nav navbar-nav"style="margin-left: 900px">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="{{ url_for('company') }}">company login</a></li>
+      <li><a href="{{ url_for('user') }}">user log in</a></li>
+
+      <li><a href="#con">contact us</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="{{ url_for('static',filename='images/5.jpg') }}" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="{{ url_for('static',filename='images/3.jpg') }}" alt="Chicago" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="{{ url_for('static',filename='images/4.png') }}" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-lg-6" style="background-color: #faeee5;height: 300px;margin-top: 20px">
+
+    <h3 style="text-align: center"> ABOUT US:-</h3>
+<p>
+MicroSolutionIndia is the leading A+, N+, MCSE, MCTS, MCITP, CCNA & ORACLE Training Institute of New Delhi, India. It is managed by a team of highly talented professionals who have more than 30 years of combined I.T. and Corporate Training experience. The sole aim of Institute of MicroSolutionIndia is to fill the ever increasing gap between the skills required in Industry and possessed by the prospective employees (engineering and MCA students).
+
+The goal of Institute of MicroSolutionIndia to become top most IT Training Institute of the country in the years to come. To achieve our goal we have charted a path for ourselves, main elements of which are our students and professionals who shall move us to the top. The success that we have achieved so far is the indicator that we are moving swiftly towards our goal.
+
+</p>
+</div>
+<div class="col-lg-6" style="height: 300px;background-color: #fae7ef;margin-top: 20px">
+
+<legend style="text-align: center;font: bold">LOG-IN</legend>
+    <form method="post" action="/lgp_code">
+        <div class="form-group">
+        <label>EMAIL ADDRESS</label>
+            <input type="email" placeholder="enter email here" name="t2" class="form-control" ></div>
+     <div class="form-group">   <label>PASSWORD</label>
+         <input type="password" placeholder="enter password" name="t3" class="form-control"> </div>
+            <button type="submit">LOG-IN</button>
+
+        <div class="radio">
+      <label><input type="radio" name="optradio" value="user">user candidate</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio" value="comp" >company employee</label>
+    </div>
+
+    </form>
+
+
+
+</div>
+<div class="col-lg-12" style="background-color: #f6fae0;height: 200px;width: 100%">
+    <div class="navbar"style="background-color: #3c3c3c;width: 100%">
+      <marquee behavior="alternate"> <h1 style="text-align:start;color: #f5faf0;font: bold" id="con">CONTACT US:-</h1></marquee>
+    </div>
+    <p style="color:#3c3c3c;font: bold ;font-size:larger;text-align: center">
+        For English and Exams related queries, please call our central
+        customer service team on 0120-4569000 / 0120-6684353, Mon-Sat 09.00 to 18.00.</br>
+For Library and General enquiries,
+        please email us at: IndiaCustomerCare@britishcouncil.org.</br>
+Exams queries: ExamsCustomerCare@britishcouncil.org,
+        don't forget to include the name of the examination and your contact details.
+
+
+
+    </P>
+</div>
+
+</body>
+</html>
